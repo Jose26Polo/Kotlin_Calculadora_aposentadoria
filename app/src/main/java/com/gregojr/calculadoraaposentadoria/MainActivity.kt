@@ -37,14 +37,15 @@ class MainActivity : Activity() {
             val idade = txt_idade.text.toString().toInt()
             var resultado = 0
 
-            if (sexo == "masculino"){
-                resultado = 65-idade
-            }else{
-                resultado = 60-idade
+            if (sexo == "masculino") {
+                resultado = 65 - idade
+            } else {
+                resultado = 60 - idade
             }
 
-        txt_resultado.text = "Faltam $resultado anos para você se aposentar."
 
+        txt_resultado.text = "Faltam $resultado anos para você se aposentar."
+        txt_idade.text.clear()
         }
     }
 
